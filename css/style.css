@@ -6,9 +6,6 @@ body{
   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:20px;
 }
-#WELCOME-SECTION{
-  height: 100%;		
-}	
 h2,h3{
   color:#888;
   font-weight:bold;
@@ -19,11 +16,11 @@ a{
   color:#722872;
 }
 a:hover,a:focus{
-    color:#592059;
+    color:#d14c9e;
   }
 #banner .container, 
 main header, 
-#portfolio .grid, 
+#projects .grid, 
 #contact>div,
 footer #footer-above{
   display:flex;
@@ -36,13 +33,13 @@ footer #footer-above{
   background-color:#722872 !important;
   height:80px;
   box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-color:#592059;
+  border-color:#460b2f;
 }
 #banner .container{
     width:95%;
     max-width:1024px;
     justify-content:space-between;
-    align-items:center;
+    align-items:right;
   }
 #banner .container::before, #banner .container::after{
       display:none
@@ -51,6 +48,11 @@ footer #footer-above{
     height:50px;
     margin:15px 0;
   }
+#nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+  }  
 nav{
   font-size:13px;
   background:#722872;
@@ -153,22 +155,25 @@ main section#contact>div>div{
               margin-top:270px;
             }
         }
-#portfolio .grid{
+#welcome-section{
+  height: 100vh
+}        
+#projects .grid{
 	padding:0;
 	max-width:90%;
 	list-style:none; 
 	margin-top:20px;
 }
-#portfolio .grid li{
+#projects .grid li{
 	margin:20px;
   max-width:600px;
   }
 @media(min-width:1023px){
-#portfolio .grid li{
+#projects .grid li{
     max-width:420px
   }
     }
-#portfolio img{
+#projects img{
   
 	max-width:100%;
 	height:auto;
@@ -216,8 +221,6 @@ form .row:first-child .form-item{
       margin:0;
       font-size:.85em;
       line-height:1.764705882em;
-      vertical-align:middle;
-      vertical-align:baseline;
       opacity:0;
       transition:top .3s ease,opacity .3s ease;
     }
